@@ -6,7 +6,6 @@ import { Provider } from 'react-redux'
 import AppStore from './utlies/appStore'
 import { ToastContainer, toast, Slide } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import {NotFound} from './Components/NotFound'
 
 const App = lazy(() => import("./Components/App"))
 const Body = lazy(() => import("./Components/Body"))
@@ -14,6 +13,7 @@ const ProductList = lazy(() => import("./Components/ProductList"))
 const ProductDetails = lazy(() => import("./Components/ProductDetails"))
 const Cart = lazy(() => import("./Components/Cart"))
 const Checkout = lazy(() => import("./Components/Checkout"))
+const NotFound = lazy (() => import ("./Components/NotFound"))
 
 const Router = createBrowserRouter([
 
@@ -61,7 +61,9 @@ const Router = createBrowserRouter([
 
   {
     path: "*",
-    element: <NotFound />
+    element: <Suspense fallback= {<div className='text-3xl animate-pulse transition-all duration-200' >Loading...........</div>}>
+        <NotFound />
+    </Suspense>
   }
 ])
 createRoot(document.getElementById('root')).render(

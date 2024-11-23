@@ -43,7 +43,7 @@ const ProductDetails = () => {
                 <p className='text-center text-3xl'><span className='text-orange-400 font-bold text-3xl'>Warranty</span> : {filterProduct[0].warrantyInformation} </p>
                 <p className='text-center text-3xl'><span className='text-orange-400 font-bold text-3xl'>Brand</span> : {filterProduct[0].brand} </p>
                 <p className='text-3xl text-center   text-amber-400'>$ {filterProduct[0].price}</p>
-                <button onClick={() => handleAddItem(filterProduct[0])} className='px-5 py-2 bg-gradient-to-r from-yellow-500 to-yellow-600 rounded-s-xl rounded-e-lg text-black font-bold  hover:scale-95 hover:font-extrabold transition-all duration-200 hover:text-white mx-auto ml-96  mt-2 addtocart'>Add to Cart</button>
+                <button onClick={() => handleAddItem(filterProduct[0])} className='px-5 py-5 ml-5 bg-gradient-to-r from-yellow-500 to-yellow-600 rounded-s-xl rounded-e-lg text-black font-bold  hover:scale-95 hover:font-extrabold transition-all duration-200 hover:text-white  mx-auto  mt-2 addtocart'>Add to Cart</button>
               </div>
           </div>
         </div>
