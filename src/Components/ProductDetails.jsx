@@ -17,7 +17,6 @@ const ProductDetails = () => {
 
   function handleAddItem(item) {
     dispatch(AddCartItem(item))
-    // localStorage.setItem ("shoppyGlobeECart" , JSON.stringify(item))  
   }
 
   return (

@@ -9,10 +9,6 @@ import { faDumbbell } from '@fortawesome/free-solid-svg-icons/faDumbbell';
 const CartItem = ({ CartItems, index }) => {
 
   const dispatch = useDispatch();
-
-  console.log(CartItem)
-
-
   return (
     <>
 

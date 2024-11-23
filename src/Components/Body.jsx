@@ -1,12 +1,12 @@
-import {  fa1, faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { fa1, faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faLink } from '@fortawesome/free-solid-svg-icons/faLink';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React  from 'react';
+import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import "./styles/Header.css"
 
 const Body = () => {
-     const navigate = useNavigate();
+  const navigate = useNavigate();
   return (
     <>
       <div className='body flex mt-24 body-main-container '>
@@ -31,9 +31,9 @@ const Body = () => {
           </div>
 
           <div className='flex justify-start list-none gap-5 text-3xl text-slate-700 mt-10'>
-              <li className='hover:text-slate-500' onClick={() => navigate ("/")}><Link><FontAwesomeIcon icon={faPhone}/></Link></li>
-              <li   className='hover:text-slate-500'  onClick={() => navigate ("/")}><Link><FontAwesomeIcon icon={faEnvelope}/></Link></li>
-              <li   className='hover:text-slate-500'  onClick={() => navigate ("/")}><Link><FontAwesomeIcon icon={faLink} /></Link></li>
+            <li className='hover:text-slate-500' onClick={() => navigate("/")}><Link><FontAwesomeIcon icon={faPhone} /></Link></li>
+            <li className='hover:text-slate-500' onClick={() => navigate("/")}><Link><FontAwesomeIcon icon={faEnvelope} /></Link></li>
+            <li className='hover:text-slate-500' onClick={() => navigate("/")}><Link><FontAwesomeIcon icon={faLink} /></Link></li>
           </div>
         </div>
 
@@ -46,10 +46,10 @@ const Body = () => {
           />
         </div>
 
-       
+
       </div>
 
-      
+
     </>
   );
 }

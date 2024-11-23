@@ -11,7 +11,6 @@ const Header = () => {
     
     const cartItems = useSelector((state) => state.Products.items)
     const [showNav, setShowNav] = useState(false)
-    console.log(showNav)
     const navigate = useNavigate()
 
     return (
