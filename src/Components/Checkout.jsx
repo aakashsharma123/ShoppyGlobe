@@ -18,7 +18,7 @@ const Checkout = () => {
     const [state, setState] = useState("");
     const [zipCode, setZipCode] = useState(0);
     const [CardDetails, setCardDetails] = useState(null);
-
+    // all details
     const prices = cartitems.reduce ((accumalator , currentvalue) => {
         return accumalator + currentvalue.price * currentvalue.quantity
     },0) 
