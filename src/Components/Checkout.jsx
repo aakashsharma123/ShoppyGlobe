@@ -34,7 +34,10 @@ const Checkout = () => {
         setCity("")
         setState("")
         setZipCode("")
-
+        if (zipCode.length > 6) {
+            toast.error("zipcode length could not be more than 6")
+            return
+        }
         Email.length === 0 || address.length === 0 || City.length === 0 || state.length === 0 || zipCode.length > 6 || zipCode.length === 0 ? toast.error("u have entered wrong details in feilds. please check it") : dispatch(clearCartItem())
     }
 
