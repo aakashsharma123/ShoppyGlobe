@@ -6,7 +6,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import "./styles/Header.css"
 
 const Body = () => {
-  const navigate = useNavigate();
+  const navigate = useNavigate()
   return (
     <>
       <div className='body flex mt-24 body-main-container '>
