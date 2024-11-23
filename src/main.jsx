@@ -6,7 +6,7 @@ import { Provider } from 'react-redux'
 import AppStore from './utlies/appStore'
 import { ToastContainer, toast, Slide } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import NotFound from './Components/NotFound'
+import {NotFound} from './Components/NotFound'
 
 const App = lazy(() => import("./Components/App"))
 const Body = lazy(() => import("./Components/Body"))

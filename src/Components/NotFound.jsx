@@ -1,19 +1,17 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
+// Components/NotFound.js
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
-
-// errors 
-
-const NotFound = () => {
-
+export const NotFound = () => {
+  const navigate = useNavigate()
   return (
     <>
-       <div className="h-screen w-screen flex justify-center align-middle items-center">
-                <h1 className='text-4xl font-semibold'>Page Not Found,404</h1>
-                <NavLink to={"/"}><button>Go Back</button></NavLink>
-        </div>
+    <div className="border-4 flex-col align-middle items-center justify-center h-screen w-screen">
+      <h1 className="text-4xl">404 - Page Not Found</h1>
+      <p>The page you are looking for does not exist.</p>
+     <button onClick={() => navigate("/")} className='border-2 px-5 bg-orange-300 rounded-2xl py-2 hover:text-black text-white'>Go Back</button>  
+    </div>
     </>
-  )
-}
-
-export default NotFound
+  
+  );
+};
