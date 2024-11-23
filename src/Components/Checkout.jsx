@@ -16,7 +16,7 @@ const Checkout = () => {
     const [address, setAddress] = useState("");
     const [City, setCity] = useState("");
     const [state, setState] = useState("");
-    const [zipCode, setZipCode] = useState(null);
+    const [zipCode, setZipCode] = useState(0);
     const [CardDetails, setCardDetails] = useState(null);
 
     const prices = cartitems.reduce ((accumalator , currentvalue) => {
@@ -74,7 +74,7 @@ const Checkout = () => {
                             <input  required value={state} onChange={(e) => setState(e.target.value)} className='w-full mt-2 py-3 border-2 rounded-xl' type="text" name="Fstate" id="state" />
 
                             <label className='block w-full  mt-2' htmlFor="zip-code">ZIPCode</label>
-                            <input   required value={zipCode} onChange={(e) => setZipCode(e.target.value)} className='w-full mt-2 py-3 border-2 rounded-xl' type="number" name="Fzip-code" id="zip-code" />
+                            <input   required value={zipCode || ""} onChange={(e) => setZipCode(e.target.value)} className='w-full mt-2 py-3 border-2 rounded-xl' type="number" name="Fzip-code" id="zip-code" />
 
                         </div>
                     </div>
